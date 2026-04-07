@@ -17,6 +17,7 @@ agent-skills/
 │   ├── module-generation/
 │   │   ├── .claude-plugin/plugin.json
 │   │   └── skills/
+│   │       ├── provider-version-upgrade/
 │   │       ├── refactor-module/
 │   │       └── terraform-stacks/
 │   └── provider-development/
@@ -106,6 +107,7 @@ npx skills add hashicorp/agent-skills/terraform/code-generation/skills/terraform
 
 # Module generation skills
 npx skills add hashicorp/agent-skills/terraform/module-generation/skills/refactor-module
+npx skills add hashicorp/agent-skills/terraform/module-generation/skills/provider-version-upgrade
 npx skills add hashicorp/agent-skills/terraform/module-generation/skills/terraform-stacks
 
 # Provider development skills
@@ -159,6 +161,7 @@ Skills for creating and refactoring Terraform modules:
 
 | Skill | Description |
 |-------|-------------|
+| `provider-version-upgrade` | Upgrade provider versions in Terraform module configurations safely |
 | `refactor-module` | Transform monolithic configs into reusable modules |
 | `terraform-stacks` | Multi-region/environment orchestration with Terraform Stacks |
 
@@ -218,6 +221,7 @@ Use when:
 ### terraform-module-generation
 Use when:
 - Refactoring existing Terraform code into modules
+- Upgrading provider versions in module-based Terraform code safely
 - Working with Terraform Stacks
 - Designing module interfaces and outputs
 - Managing multi-environment deployments
