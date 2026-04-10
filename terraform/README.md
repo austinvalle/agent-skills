@@ -22,6 +22,7 @@ Skills for creating and refactoring Terraform modules.
 | Skill | Description |
 |-------|-------------|
 | refactor-module  | Transform monolithic configs into reusable modules |
+| module-version-upgrade | Upgrade Terraform module versions in configuration safely |
 | provider-version-upgrade | Upgrade provider versions in Terraform module configurations safely |
 | terraform-stacks | Multi-region/environment orchestration with Terraform Stacks |
 
@@ -60,6 +61,7 @@ npx skills add hashicorp/agent-skills/terraform/code-generation/skills/terraform
 
 # Module generation
 npx skills add hashicorp/agent-skills/terraform/module-generation/skills/refactor-module
+npx skills add hashicorp/agent-skills/terraform/module-generation/skills/module-version-upgrade
 npx skills add hashicorp/agent-skills/terraform/module-generation/skills/provider-version-upgrade
 npx skills add hashicorp/agent-skills/terraform/module-generation/skills/terraform-stacks
 
@@ -96,6 +98,7 @@ terraform/
 │   └── skills/
 │       ├── terraform-stacks/
 │       ├── refactor-module/
+│       ├── module-version-upgrade/
 │       └── provider-version-upgrade/
 └── provider-development/
     ├── .claude-plugin/plugin.json
